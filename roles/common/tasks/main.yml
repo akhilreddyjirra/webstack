@@ -12,6 +12,6 @@
   tags: ntp
 
 -name: copy ntp file
-  template: src:ntp.conf dest=/etc/htp.conf
+  template: src=ntp.conf dest=/etc/htp.conf
   tags: ntp
   notify: restart ntp service
