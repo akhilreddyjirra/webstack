@@ -1,3 +1,4 @@
 ---
 
 dnsserver: 8.8.8.8
+ntpserver: 2.in.pool.ntp.org
