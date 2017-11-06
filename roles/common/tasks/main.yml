@@ -11,12 +11,7 @@
   yum: name=ntp state=present
   tags: ntp
 
-<<<<<<< HEAD
 - name: copy ntp file
   template: src=ntp.conf dest=/etc/ntp.conf
-=======
--name: copy ntp file
-  template: src=ntp.conf dest=/etc/htp.conf
->>>>>>> 5790f9a45529006580d226c66e98dba589015606
   tags: ntp
   notify: restart ntp service
