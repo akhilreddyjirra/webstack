@@ -2,7 +2,7 @@
 
 - name: Install apache package
   yum: name={{ item }} state=present
-  with_items
+  with_items:
     - httpd
     - httpd-tools
 
