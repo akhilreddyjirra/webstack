@@ -12,7 +12,7 @@
   roles:
     - common
 
-- name:Install and config webserver
+- name: Install and config webserver
   hosts: webserver
   user: asadmin
   become: yes
