@@ -11,3 +11,9 @@
   tags: apache
   notify: restart apache service
 
+- name: add firewall rule 
+  shell: iptables -I INPUT -p tcp --dport http -j ACCEPT -m commnet --comment "Apache port 80"
+  tags: apache
+- name: Save Ip tables
+  command: iptables-save
+  tags: apache
